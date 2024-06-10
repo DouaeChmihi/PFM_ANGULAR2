@@ -1,0 +1,24 @@
+mat-toolbar {
+    background-color: #3f51b5; /* Replace with your desired color */
+    color: white; /* Optional: Change text color for contrast */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .toolbar-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toolbar-icons button {
+    margin-left: 8px;
+  }
+  
+
+  .link-pointer {
+    cursor: pointer;
+  
+  }
+  
+ 

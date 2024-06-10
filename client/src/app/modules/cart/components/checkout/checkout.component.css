@@ -1,0 +1,53 @@
+.checkout-card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+ 
+}
+.price {
+  color: #ff0000; /* Couleur rouge (vous pouvez utiliser n'importe quelle couleur de votre choix) */
+}
+.total-price {
+  font-size: 1rem;
+  font-weight: bold; /* Gras */
+}
+
+.checkout-container {
+  display: flex;
+  justify-content: space-between; /* Pour répartir les cartes à l'extrémité gauche et droite */
+}
+
+.checkout-header-wrapper {
+  margin-top: 20px; /* Vous pouvez ajuster la valeur de la marge selon vos préférences */
+}
+.left-card {
+  margin-right: auto; /* Déplacer la première carte à gauche */
+}
+
+.right-card {
+  margin-left: auto; /* Déplacer la deuxième carte à droite */
+}
+.full-width {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+mat-card {
+  padding: 20px;
+}
+
+
+.checkout-header {
+  font-size: px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #007bff; /* Couleur de texte bleue */
+}
+
+.section-header {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black; /* Couleur de texte bleue */
+  
+}

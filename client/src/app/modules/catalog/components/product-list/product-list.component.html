@@ -1,0 +1,31 @@
+
+<!-- product-list.component.html -->
+<mat-drawer-container class="min-h-full max-w-7xl mx-auto">
+    <mat-drawer mode="side" opened class="p-6" >
+      <h3 class="sidebar-title cursor-pointer" (click)="resetFilters()">Categories</h3>
+      <mat-nav-list>
+        <mat-list-item (click)="filterByCategory(category)" *ngFor="let category of categories">
+            <a class="nav-link" matLine  >{{ category }}</a>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content class="p-6">
+        <mat-grid-list
+        *ngIf="allProducts && allProducts.length"
+        gutterSize="16"
+        cols="4"
+        rowHeight="335"
+        >
+        <mat-grid-tile *ngFor="let product of filteredProducts" >
+            
+          <app-product-box
+          
+          [product]="product"
+          class="w-full"
+        ></app-product-box>
+
+        </mat-grid-tile>
+        </mat-grid-list>
+     
+    </mat-drawer-content>
+  </mat-drawer-container>

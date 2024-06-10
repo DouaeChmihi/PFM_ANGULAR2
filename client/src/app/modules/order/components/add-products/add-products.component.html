@@ -1,0 +1,54 @@
+<mat-sidenav-container class="sidenav-container">
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" class="toolbar">
+      <div class="toolbar-content">
+        <button mat-icon-button [matMenuTriggerFor]="menu" class="menu-button">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span class="dashboard-title">Admin Dashboard</span>
+      </div>
+    </mat-toolbar>
+    
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="logout()">Logout</button>
+    </mat-menu>
+    
+
+    <main class="mt-5 pt-3">
+      <div class="container-fluid">      
+        <div class="row justify-content-center"> <!-- Centrer la rangée -->
+          <div class="col-md-12 mb-3">
+            <div class="card">
+              <div class="card-header text-center"> <!-- Centrer l'en-tête -->
+                <span class="table-icon"><i class="bi bi-table me-2"></i></span> Ajouter un Produit
+              </div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <!-- Formulaire d'ajout de produit -->
+                    <form (ngSubmit)="addProduct()">
+                      <mat-form-field class="w-100">
+                        <input matInput placeholder="Nom du produit" [(ngModel)]="product.name" name="name" required>
+                      </mat-form-field>
+                      <mat-form-field class="w-100">
+                        <input matInput placeholder="Prix" [(ngModel)]="product.price" name="price" required>
+                      </mat-form-field>
+                      <mat-form-field class="w-100">
+                        <textarea matInput placeholder="Description" [(ngModel)]="product.description" name="description" required></textarea>
+                      </mat-form-field>
+                      <!-- Ajoutez d'autres champs selon vos besoins -->
+                      <button mat-raised-button type="submit">Ajouter le produit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+ 
+  </mat-sidenav-content>
+</mat-sidenav-container>

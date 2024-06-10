@@ -1,0 +1,7 @@
+<ng-container *ngIf="!isAdminPage() && !isAuthPage() && !isAddProductPage()">
+  <app-header></app-header>
+</ng-container>
+<router-outlet></router-outlet>
+<ng-container *ngIf="!isAdminPage() && !isAuthPage() && !isAddProductPage() && !isCheckoutPage() && !isCartPage()">
+  <app-footer></app-footer>
+</ng-container>

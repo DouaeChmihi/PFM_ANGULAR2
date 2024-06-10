@@ -1,0 +1,7 @@
+<h2>Order Detail</h2>
+<div *ngIf="order">
+  <p>ID: {{ order._id }}</p>
+  <p>Status: {{ order.status }}</p>
+  <p>Total Price: {{ order.totalPrice }} $</p>
+  <p>Shipping Address: {{ order.shippingAddress.fullName }}, {{ order.shippingAddress.address }}, {{ order.shippingAddress.city }}, {{ order.shippingAddress.zipCode }}</p>
+</div>

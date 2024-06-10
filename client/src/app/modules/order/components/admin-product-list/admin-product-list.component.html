@@ -1,0 +1,11 @@
+<div>
+    <h2>Produits</h2>
+    <mat-card *ngFor="let product of products">
+      <mat-card-title>{{ product.name }}</mat-card-title>
+      <mat-card-content>{{ product.description }}</mat-card-content>
+      <mat-card-actions>
+        <button mat-button (click)="deleteProduct(product._id)">Supprimer</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  

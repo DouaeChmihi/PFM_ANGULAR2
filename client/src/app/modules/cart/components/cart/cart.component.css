@@ -1,0 +1,18 @@
+.total-price {
+    font-size: 1.2rem; /* Set the font size */
+    margin-top: 1rem; /* Add margin at the top */
+    padding: 0.5rem; /* Add padding */
+    margin-bottom: 1rem; /* Add margin at the top */
+
+
+  }
+  
+  .total-price strong {
+    color: #333; /* Set color for the strong element */
+  }
+
+  .container {
+    display: flex; /* Use flexbox */
+    justify-content: flex-end; /* Align items to the end of the container (right side) */
+  }
+  

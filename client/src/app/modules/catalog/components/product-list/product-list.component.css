@@ -1,0 +1,11 @@
+.sidebar-title {
+    font-size: 1.2rem; /* Increase font size */
+    font-weight: bold; /* Make font bold */
+    margin-bottom: 0.5rem; /* Add some space below the title */
+    border-bottom: 2px solid #ccc; /* Add a line under the title */
+    padding-bottom: 0.5rem; /* Add some padding below the line */
+  }
+  
+  .mat-list-item:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+  }
